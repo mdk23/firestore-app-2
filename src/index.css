@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.card-style{
+    @apply flex flex-col text-center shadow-xl p-16 rounded-xl my-5 bg-gray-100 
+  }
+
+  .button-style{
+    @apply flex flex-row bg-gradient-to-r from-gray-600 to-gray-800 w-[300px] p-5 mx-auto text-white items-center justify-center gap-3 rounded-md 
+  }
+  
+  .card-post{
+    @apply flex flex-col w-[600px] h-[500px] bg-gray-500 rounded-lg shadow-2xl justify-start items-center
+  }
+
+  .card-post-input{
+    @apply w-[400px] p-2 bg-black text-white outline-0 rounded-md
+  }
+
+  .card-post-text-area{
+    @apply bg-black text-white w-[400px] p-8 outline-0 rounded-md
+  }
+
+  .card-post-button{
+    @apply w-[250px] p-4 my-2 rounded-md bg-gradient-to-r from-white to-slate-300 shadow-xl text-black font-extrabold
+  }
