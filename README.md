@@ -4,9 +4,8 @@ This project is an example of a Blog Site, has FireStore for the backend, styled
 Only the owner of the post is responsible for deleting the post
 
 ## Screenshots
-
-In the project directory, you can run:
-
+Some images of the project
+ 
 ### `Home`
 The user is not authenticated but can still see the list of posts
 
